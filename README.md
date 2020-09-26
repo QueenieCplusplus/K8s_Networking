@@ -63,13 +63,13 @@ Network Resources for K8s
                                 ｜
                                 ｜
 
-                                LB   --------   Service Agent
+                              LB   ----R/W status of service ----   Service Agent
 
-                         /       |                      \
-                        /        |                       \
-                       /         |                        \
+                         /       |                                      \
+                        /        |                                       \
+                       /         |                                        \
                   --- Slave--  --Slave---                                       
-                  | Pod Pod | | Pod Pod |                    K8s Master （API Server, etcd）
+                  | Pod Pod | | Pod Pod |                             K8s Master （API Server, etcd）
                   ｜   sw   |  |   sw   |
                   ---Router--  --Router-- 
 
