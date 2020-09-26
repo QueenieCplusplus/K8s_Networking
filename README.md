@@ -68,7 +68,7 @@ Network Resources for K8s
                          /       |                      \
                         /        |                       \
                        /         |                        \
-                  --- Node---  ---Node--                                       
+                  --- Slave--  --Slave---                                       
                   | Pod Pod | | Pod Pod |                    K8s Master  
                   ---Router--  --Router-- 
 
