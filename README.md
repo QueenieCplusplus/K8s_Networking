@@ -27,4 +27,6 @@ Network Resources for K8s
 
  此網路連結的空間是平行的，對於叢集內的所有 Pod 來說，也沒有 NAT 的轉換。
  
+     # ip address show
+ 
                            
