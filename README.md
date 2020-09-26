@@ -54,23 +54,23 @@ Network Resources for K8s
  (3) Pod 與 Service(即內部的負載平衡器) 之間的通訊。
  
  
-                           外部用戶端
-                           
-                               ｜
-                               ｜
-                               ｜
+                                 外部用戶端
+                            
+                                    ｜
+                                    ｜
+                                    ｜
                                
-                         ClusterIP.NodePort
+    ClusterIP.NodePort(對外存取端點) ｜｜ 或是 ClusterIP.Service（內部 LB ）
                                                        
-                               |                                Pod
-                               |                               /
-                               |                              /
-                                                             /
-                       (DNAT in iptables) ------  Kube-proxy ------ Pod
-                                                             \
-                                                              \
-                                                               \
-                                                                Pod
+                                    |                                Pod
+                                    |                               /
+                                    |                              /
+                                                                  /
+                          (DNAT in iptables) ------  Kube-proxy ------  Pod
+                                                                  \
+                                                                   \
+                                                                    \
+                                                                    Pod
                                                                
  (4) Cluster 有叢集自身的 IP 並且結合 Node 的 Port 產生對外的服務端點。
  
