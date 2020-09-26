@@ -56,6 +56,7 @@ Network Resources for K8s
  # K8s 的網路實現之 2
  
  (1) Pod 與 Service(即內部的負載平衡器) 之間的通訊。
+ 
  (2) Cluster 有叢集自身的 IP 並且結合 Node 的 Port 產生對外的服務端點。
  
  
