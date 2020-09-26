@@ -51,7 +51,7 @@ Network Resources for K8s
      
      * 不同 Node 的 Pod 之間通訊
  
- (3) Pod 與 Service 之間的通訊。
+ (3) Pod 與 Service(即內部的負載平衡器) 之間的通訊。
  
  
                            外部用戶端
@@ -84,7 +84,7 @@ Network Resources for K8s
                                 ｜
                                 ｜
 
-                              LB   ----R/W status of service ----   Service Agent
+                              LB （外部的負載平衡器） ----R/W status of service ----   Service Agent
 
                          /       |                                      \
                         /        |                                       \
