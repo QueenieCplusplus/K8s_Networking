@@ -10,6 +10,7 @@ Network Resources for K8s
 
 
 
+                                               IP-per-IP
            container port in PodB --- PodB IP ----------- PodA IP ---- container port in PodA
                                                    |
                                                    |
