@@ -45,12 +45,33 @@ Network Resources for K8s
  
  (2) Pod 與 Pod 可直接利用 IP 進行 Socket 溝通。
  
- (3) Pod 與 Service of Node 可藉由 ______  進行通訊。
+ (3) Pod 與 Node 之間的通訊。
  
      * 同一 Node 的 Pod 之間通訊
      
      * 不同 Node 的 Pod 之間通訊
  
+ (3) Pod 與 Service 之間的通訊。
+ 
+ 
+                           外部用戶端
+                           
+                               ｜
+                               ｜
+                               ｜
+                               
+                         ClusterIP.NodePort
+                                                       
+                               |                                Pod
+                               |                               /
+                               |                              /
+                                                             /
+                       (DNAT in iptables) ------  Kube-proxy ------ Pod
+                                                             \
+                                                              \
+                                                               \
+                                                                Pod
+                                                               
  (4) Cluster 有叢集自身的 IP 並且結合 Node 的 Port 產生對外的服務端點。
  
  # K8s 網路架構圖
