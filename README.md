@@ -53,7 +53,7 @@ Network Resources for K8s
        
         * 此三個 IP 皆為同網段，可相互通信。
         
-        * docker0 是 Pod_a、Pod_b 的預設路由器。
+        * docker0 是 Pod_a、Pod_b 的預設路由器，是 Pod 的 IP 管理。
    
    
    
