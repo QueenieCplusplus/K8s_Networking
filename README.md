@@ -36,7 +36,18 @@ Network Resources for K8s
   
   缺點：因為共用資源，所以缺乏隔離性。
   
-  
+ 
+ # K8s 的網路實現
+ 
+ 使用微服務概念。
+ 
+ (1) 容器與容器是共用網路資源的耦合關係。
+ 
+ (2) Pod 與 Pod 可直接利用 IP 進行 Socket 溝通。
+ 
+ (3) Pod 與 Service of Node 可藉由 ______  進行通訊。
+ 
+ (4) Cluster 有叢集自身的 IP 並且結合 Node 的 Port 產生對外的服務端點。
   
 
   
