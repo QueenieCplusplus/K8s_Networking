@@ -86,11 +86,11 @@ Network Resources for K8s
 
                               LB （外部的負載平衡器） ----R/W status of service ----   Service Agent
 
-                         /       |                                      \
-                        /        |                                       \
-                       /         |                                        \
+                         /       |                                                     \
+                        /        |                                                      \
+                       /         |                                                       \
                   --- Slave--  --Slave---                                       
-                  | Pod Pod | | Pod Pod |                             K8s Master （API Server, etcd）
+                  | Pod Pod | | Pod Pod |                                      K8s Master （API Server, etcd）
                   ｜   sw   |  |   sw   |
                   ---Router--  --Router-- 
 
