@@ -47,6 +47,10 @@ Network Resources for K8s
  
  (3) Pod 與 Service of Node 可藉由 ______  進行通訊。
  
+     * 同一 Node 的 Pod 之間通訊
+     
+     * 不同 Node 的 Pod 之間通訊
+ 
  (4) Cluster 有叢集自身的 IP 並且結合 Node 的 Port 產生對外的服務端點。
   
 
