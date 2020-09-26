@@ -73,4 +73,5 @@ Network Resources for K8s
                   ---Router--  --Router-- 
 
 
+  * LB：效果同 GCE。
 
