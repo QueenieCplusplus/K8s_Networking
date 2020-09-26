@@ -10,7 +10,7 @@ Network Resources for K8s
 
 
 
-                                               IP-per-IP
+                                               IP-per-Pod
            container port in PodB --- PodB IP ----------- PodA IP ---- container port in PodA
                                                    |
                                                    |
@@ -23,10 +23,20 @@ Network Resources for K8s
                                                Cluster IP
                                                    
                                                    
-* IP per IP 
+* IP per Pod 
 
  此網路連結的空間是平行的，對於叢集內的所有 Pod 來說，也沒有 NAT 的轉換。
  
      # ip address show
  
-                           
+* container to Pod
+
+  同一 Pod 內的容器都是用同一 IP 位址，所以僅需要將 IP 指定為 localhost 和連接對方的連接阜 port 即可。
+  因為同一豌豆莢子內的容器都是共用一個網路資源，彼此本身也是耦合關係，所以用 bind() 互相繫結彼此。
+  
+  缺點：因為共用資源，所以缺乏隔離性。
+  
+  
+  
+
+  
