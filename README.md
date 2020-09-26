@@ -57,9 +57,9 @@ Network Resources for K8s
            |   |               |                   |             |             |
            |   |__eth0 of IPa__|                   |             |             |
            |           |___________________-eth003-|             |             |
-           |                                       |             |
-           |    ____ Pod_b  ____                   |             IPc---Router eth0
-           |   |               |                   |             |
+           |                                       |   Default          
+           |    ____ Pod_b  ____                   |     GW     IPc---Router eth0
+           |   |               |                   |             
            |   |               |                   |             |             |
            |   |               |                   |             |             |
            |   |__eth0 of IPb__|                   |             |             |
