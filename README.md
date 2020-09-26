@@ -37,7 +37,7 @@ Network Resources for K8s
   缺點：因為共用資源，所以缺乏隔離性。
   
  
- # K8s 的網路實現
+ # K8s 的網路實現之 1
  
  使用微服務概念。
  
@@ -50,8 +50,13 @@ Network Resources for K8s
      * 同一 Node 的 Pod 之間通訊
      
      * 不同 Node 的 Pod 之間通訊
+     
+-------------------------------------------------
+
+ # K8s 的網路實現之 2
  
- (3) Pod 與 Service(即內部的負載平衡器) 之間的通訊。
+ (1) Pod 與 Service(即內部的負載平衡器) 之間的通訊。
+ (2) Cluster 有叢集自身的 IP 並且結合 Node 的 Port 產生對外的服務端點。
  
  
                                  外部用戶端
@@ -72,7 +77,7 @@ Network Resources for K8s
                                                                     \
                                                                     Pod
                                                                
- (4) Cluster 有叢集自身的 IP 並且結合 Node 的 Port 產生對外的服務端點。
+ 
  
  # K8s 網路架構圖
  
