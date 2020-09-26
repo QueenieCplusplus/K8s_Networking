@@ -63,7 +63,7 @@ Network Resources for K8s
                                 ｜
                                 ｜
 
-                                LB   --------   Service
+                                LB   --------   Service Agent
 
                          /       |                      \
                         /        |                       \
