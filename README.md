@@ -52,6 +52,25 @@ Network Resources for K8s
      * 不同 Node 的 Pod 之間通訊
  
  (4) Cluster 有叢集自身的 IP 並且結合 Node 的 Port 產生對外的服務端點。
-  
+ 
+ # K8s 網路架構圖
+ 
+ 
 
-  
+                             外部存取
+
+                                ｜
+                                ｜
+                                ｜
+
+                                LB   --------   Service
+
+                         /       |                      \
+                        /        |                       \
+                       /         |                        \
+                  --- Node---  ---Node--                                       
+                  | Pod Pod | | Pod Pod |                    K8s Master  
+                  ---Router--  --Router-- 
+
+
+
