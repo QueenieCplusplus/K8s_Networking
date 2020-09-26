@@ -69,9 +69,11 @@ Network Resources for K8s
                         /        |                       \
                        /         |                        \
                   --- Slave--  --Slave---                                       
-                  | Pod Pod | | Pod Pod |                    K8s Master  
+                  | Pod Pod | | Pod Pod |                    K8s Master （API Server, etcd）
                   ---Router--  --Router-- 
 
 
   * LB：效果同 GCE。
+  
+  * Service Agent: 感測服務的變化，進而透過 API 監控服務
 
